@@ -1,0 +1,8 @@
+server:
+  port: 8082
+
+email:
+  user: 1363318229@qq.com   #发送者
+  code: txgdmpsezmzgjcfg    #授权码
+  host: smtp.qq.com
+  auth: true                #是否验证合法性
