@@ -61,6 +61,13 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
         </dependency>
+
+        <!--引入自定义第三方依赖-->
+        <dependency>
+            <groupId>css.test</groupId>
+            <artifactId>common-pojo</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
