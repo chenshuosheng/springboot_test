@@ -6,3 +6,10 @@ email:
   code: txgdmpsezmzgjcfg    #授权码
   host: smtp.qq.com
   auth: true                #是否验证合法性
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/springboot_test
