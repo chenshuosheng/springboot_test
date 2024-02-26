@@ -1,4 +1,4 @@
-package css.test;
+package css.test.config;
 
 import css.test.pojo.Province;
 import org.springframework.context.annotation.Bean;
