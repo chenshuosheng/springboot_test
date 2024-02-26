@@ -3,6 +3,7 @@ package css.test.sprinboot_test.beanRegister.config;
 import css.test.pojo.Country;
 import css.test.pojo.Province;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,6 +38,8 @@ public class CommonConfig {
         return new Country(name,system);
     }
 
+    //当相应bean对象不存在时，注入province bean对象
+    @ConditionalOnMissingBean(name = "country2")
     @Bean
     public Province province(){
         return new Province();

@@ -24,9 +24,10 @@ public class SpringbootTestApplication {
         //System.out.println(context.getBean(Country.class));
 
         System.out.println(context.getBean("country"));
-        System.out.println(context.getBean("country2"));
+        //System.out.println(context.getBean("country2"));
 
         System.out.println(context.getBean("province2"));
+        System.out.println(context.getBean("province"));
     }
 
 }
