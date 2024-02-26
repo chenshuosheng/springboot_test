@@ -14,8 +14,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CommonConfig {
 
+    //将方法返回值交给IOC容器管理，成为IOC容器的bean对象
+    //对象默认的名字：方法名
     @Bean
     public Country country(){
+        return new Country();
+    }
+
+    @Bean("country2")
+    public Country country_2(){
         return new Country();
     }
 
