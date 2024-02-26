@@ -13,3 +13,7 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://localhost:3306/springboot_test
+
+#country:
+#  name: China
+#  system: socialism
