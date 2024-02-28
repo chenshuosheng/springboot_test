@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.2</version>
+        <version>3.1.9</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>css.test</groupId>
@@ -14,7 +14,7 @@
     <name>springboot_test</name>
     <description>springboot_test</description>
     <properties>
-        <java.version>8</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -47,11 +47,17 @@
         </dependency>
 
         <!--mybatis的起步依赖-->
-        <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
-        <dependency>
+        <!--https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter-->
+        <!--<dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.2.2</version>
+            <version>3.0.2</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>css.test</groupId>
+            <artifactId>dmybatis-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!--mysql驱动依赖-->
